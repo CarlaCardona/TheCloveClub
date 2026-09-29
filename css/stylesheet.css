@@ -1,0 +1,44 @@
+
+body {
+    margin: 0;
+}
+
+
+
+/* landing page css */
+
+.landing__page {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.landing__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.landing__page_btns {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.landing__page_btns a{
+    text-decoration: none;
+}
+
+.landing__reservations, .landing__homepage {
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 1rem 1.2rem;
+}
