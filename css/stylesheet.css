@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&display=swap');
 
 body {
     margin: 0;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 0.2rem;
 }
 
 
@@ -11,6 +14,9 @@ body {
     position: relative;
     min-height: 100vh;
     overflow: hidden;
+
+    display: flex;
+    align-items: center;
 }
 
 .landing__video {
@@ -26,19 +32,74 @@ body {
     position: relative;
     z-index: 1;
 
+    width: 100%;
+    padding: 0 5%;
+
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-content: center;
 }
 
-.landing__page_btns a{
+.landing__page_btns a {
     text-decoration: none;
 }
 
 .landing__reservations, .landing__homepage {
-    color: white;
-    border: 2px solid white;
+    font-family: 'Gloock', serif;
+    color: #FAF4ED;
+    border: 2px solid #FAF4ED;
     background-color: transparent;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
     padding: 1rem 1.2rem;
+}
+
+/* nav css */
+
+nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 4.5rem;
+}
+
+.lettermark {
+    font-family: 'Cormorant', serif;
+    font-weight: 800;
+    font-size: 4.5rem;
+    color: #084794;
+    letter-spacing: 0.2rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+
+}
+
+.nav__links li{
+    list-style: none;
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+
+.nav__links a{
+    color: #084794;
+    text-decoration: none;
+}
+
+.nav__reservations {
+    font-family: 'Cormorant', serif;
+    color: #084794;
+    border: 2px solid #084794;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 1rem 1rem;
 }
