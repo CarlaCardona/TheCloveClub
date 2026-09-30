@@ -139,10 +139,32 @@ ul {
 .site-summary__text {
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 3rem;
     margin-left: 8rem;
 }
 
 .site-summary__text h1 {
     font-size: 3rem;
 }
+
+.site-summary__text h2 {
+    margin-top: -2rem;
+}
+
+    /* main-content review section css */
+
+.review-section {}
+
+.plate-trio {
+    display: flex;
+    flex-direction: column;
+}
+
+.plate-trio img {
+    height: 35%;
+    width: 25%;
+
+    margin: -6rem;
+    margin-left: -1.5rem;
+}
+
