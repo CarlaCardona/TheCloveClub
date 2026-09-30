@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&display=swap');
 
 body {
+    background-color: #FAF4ED;
     margin: 0;
     font-family: 'Manrope', sans-serif;
+    letter-spacing: 0.08rem;
 }
 
 h1 {
@@ -55,7 +57,7 @@ h2 {
 }
 
 .landing__reservations, .landing__homepage {
-    font-family: 'Gloock', serif;
+    font-family: 'Cormorant', serif;
     color: #FAF4ED;
     border: 2px solid #FAF4ED;
     background-color: transparent;
@@ -136,8 +138,9 @@ ul {
 
 .site-summary {
     display: flex;
-    align-items: center;
-    gap: 4rem;
+    align-items: flex-start;
+    gap: 2.8rem;
+    margin-bottom: -12.5rem;
 }
 
 .site-summary__text {
@@ -172,7 +175,7 @@ ul {
 
 .review-section {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
    
     gap: 4rem;
     padding-right: 8rem;
@@ -198,15 +201,25 @@ ul {
     margin-top: -10rem;
 }
 
+.plate-trio__plate4 {
+    position: relative;
+    z-index: 1;
+}
+
 .reviews {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: -1.5rem;
+    gap: 4rem;
 }
 
 .review1 {
+    margin-top: 10rem;
     max-width: 55%;
+}
+
+.review1 h2 {
+    margin-top: 0;
 }
 
 .review2 {
@@ -224,20 +237,43 @@ ul {
 
 .reserve__cta {
     background-color: #084794;
+    padding: 4.5rem 7rem;
+    margin-top: -15rem;
 }
 
 .reserve__cta-text {
     color: #FAF4ED;
+    text-align: right;
 }
 
-.reserve__cta-btns {}
+.reserve__cta-text h1 {
+    color: #FAF4ED;
+    font-size: 3rem;
+}
+
+.reserve__cta-text h2 {
+    margin-top: -2rem;
+}
+
+.reserve__cta-text p {
+    margin-top: 0.10rem;
+}
+
+.reserve__cta-btns {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: 1.2rem;
+    
+    gap: 0.5rem;
+}
 
 .reserve__cta-btns a{
     text-decoration: none;
 }
 
 .homepage__menu-btn, .homepage__reservations-btn {
-    font-family: 'Gloock', serif;
+    font-family: 'Cormorant', serif;
     color: #FAF4ED;
     border: 2px solid #FAF4ED;
     background-color: transparent;
@@ -245,3 +281,51 @@ ul {
     letter-spacing: 0.2em;
     padding: 1rem 1.2rem;
 }
+
+/* footer css*/
+
+.footer {
+    display: flex;
+    color: #084794;
+    padding: 2rem 4rem;
+
+}
+
+.footer__left {
+    max-width: 15%;
+}
+
+.footer__left h1{
+    font-size: 3.5rem;
+}
+
+.footer__right {
+    display: flex;
+    text-align: right;
+    gap: 4.5rem;
+}
+
+.footer__visit {}
+
+.visit-title {
+    font-weight: bold;
+}
+
+.footer__follow {}
+
+
+.follow-title {
+    font-weight: bold;
+}
+
+.footer__sitemap {
+}
+
+.footer__sitemap li{
+
+}
+
+.sitemap-title {
+    font-weight: bold;
+}
+
