@@ -117,7 +117,7 @@ ul {
     padding: 1rem 1rem;
 }
 
-/* hero css */
+        /*  homepage - hero css */
 
 .hero {
     background-image: url('../media/homepage-hero.png');
@@ -127,7 +127,7 @@ ul {
     min-height: 100vh;   
 }
 
-/* main content css */
+        /* homepage - main content css */
 
 .main-content {
     display: flex;
@@ -171,7 +171,7 @@ ul {
     margin-top: -2rem;
 }
 
-    /* main-content review section css */
+        /* homepage - main content review section css */
 
 .review-section {
     display: flex;
@@ -233,7 +233,7 @@ ul {
     height: auto;
 }
 
-/* reserve cta section css */
+        /* hmepage - reserve cta section css */
 
 .reserve__cta {
     background-color: #084794;
@@ -302,6 +302,8 @@ ul {
     letter-spacing: 0.2rem;
 }
 
+        /* about page - hero section*/
+
 .hero__split {
     display: flex;
     min-height: 100vh;
@@ -324,12 +326,24 @@ ul {
 
 .hero__text {
     flex: 1;
-    padding: 15rem 4rem 4rem;
+    padding: 20rem 5rem;
 }
+
+.hero__text h1 {
+    font-size: 3.5rem;
+}
+
+.hero__text h2 {
+    margin-top: -1rem;
+    padding: 0 1.8rem 0 0;
+}
+
+        /* about page - isaac css */
 
 .chunk__divider {
     background-color: #084794;
     padding-top: 3rem;
+    gap: 1rem;
 }
 
 .isaac-header {
@@ -354,6 +368,28 @@ ul {
     width: 85%;
     height: auto;
     display: block;
+}
+
+.about__content {
+    display: flow-root;
+    padding: 2rem 6rem 4rem;
+}
+
+.about__content p {
+    padding-left: 2rem;
+}
+
+.about__content h2 {
+    padding-left: 2rem;
+}
+
+.pour__img {
+    float: right;
+    width: 40%;
+    height: auto;
+    margin: -22rem -6rem 1rem 2rem;
+    position: relative;
+    z-index: 1;
 }
 
 
