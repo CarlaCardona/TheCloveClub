@@ -282,6 +282,82 @@ ul {
     padding: 1rem 1.2rem;
 }
 
+/* menu page css */
+
+/* about page css */
+
+.nav__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.lettermark__about {
+    font-family: 'Cormorant', serif;
+    font-weight: 800;
+    font-size: 4.5rem;
+    color: #FAF4ED;
+    letter-spacing: 0.2rem;
+}
+
+.hero__split {
+    display: flex;
+    min-height: 100vh;
+}
+
+.hero__video {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    position: relative;
+}
+
+.about__video {
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.hero__text {
+    flex: 1;
+    padding: 15rem 4rem 4rem;
+}
+
+.chunk__divider {
+    background-color: #084794;
+    padding-top: 3rem;
+}
+
+.isaac-header {
+    color: #FAF4ED;
+    font-weight: 800;
+    font-size: 3rem;
+    margin: 0 0 2rem 6rem;
+}
+
+.isaac__header-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.2rem;
+}
+
+.isaac__flower {
+    width: 6rem;
+    display: block;
+}
+
+.isaac__img img {
+    width: 85%;
+    height: auto;
+    display: block;
+}
+
+
+
 /* footer css*/
 
 .footer {
