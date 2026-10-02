@@ -394,7 +394,7 @@ ul {
 .menus {
     display: flex;
     min-height: 80vh;
-    padding: 8rem 12rem;
+    padding: 4rem 12rem;
 }
 
 .menu__title {
@@ -411,44 +411,74 @@ ul {
     font-weight: 400;
 }
 
+.menu__courses {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__courses li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item__name {
+    font-family: 'Cormorant', serif;
+    font-weight: 600;
+    color: #084794;
+    font-size: 1.2rem;
+}
+
+.menu__comments {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
 .menu-panel {
-  display: flex;
-  flex: 1;
-  min-width: 0;
-  overflow: hidden;
-  border-left: 2px solid #084794;
-  transition: flex-grow 0.6s ease;
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    border-left: 2px solid #084794;
+    transition: flex-grow 0.6s ease;
+}
+
+.menu-panel__inner {
+    padding-left: 8rem;
 }
 
 .menu-panel.is-open {
-  flex-grow: 5;
+    flex-grow: 5;
 }
 
 .menu-panel__tab {
-  writing-mode: vertical-rl;
-  background: none;
-  border: none;
-  padding: 2rem 1rem;
-  font-family: 'Cormorant', serif;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: #084794;
-  cursor: pointer;
+    writing-mode: vertical-rl;
+    background: none;
+    border: none;
+    padding: 2rem 1rem;
+    font-family: 'Cormorant', serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #084794;
+    cursor: pointer;
 }
 
 .menu-panel__content {
-  min-width: 30rem;
-  padding: 2rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
+    min-width: 30rem;
+    padding: 5rem 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
 }
 
 .menu-panel.is-open .menu-panel__content {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.3s;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.3s;
 }
 
 
