@@ -2,6 +2,7 @@
 
 $brand-color1: #084794;
 $brand-color2: #FAF4ED;
+$line-height: 1.6;
 
 
 body {
@@ -9,6 +10,7 @@ body {
     margin: 0;
     font-family: 'Manrope', sans-serif;
     letter-spacing: 0.08rem;
+    line-height: $line-height;
 }
 
 h1 {
@@ -137,7 +139,6 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 rem;
 
 }
 
@@ -145,7 +146,9 @@ ul {
     display: flex;
     align-items: flex-start;
     gap: 2.8rem;
-    margin-bottom: -12.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: -10.5rem;
+    max-width: 100%;
 }
 
 .site-summary__text {
@@ -175,6 +178,7 @@ ul {
 .site-summary__text h2 {
     margin-top: -2rem;
 }
+
 
         /* homepage - main content review section css */
 
@@ -215,12 +219,12 @@ ul {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .review1 {
     margin-top: 10rem;
-    max-width: 55%;
+    max-width: 60%;
 }
 
 .review1 h2 {
@@ -228,9 +232,10 @@ ul {
 }
 
 .review2 {
-    max-width: 55%;
+    max-width: 65%;
     align-self: flex-end;
     text-align: right;
+    margin-bottom: 10rem;
 }
 
 .reviews img{
@@ -242,7 +247,7 @@ ul {
 
 .reserve__cta {
     background-color: $brand-color1;
-    padding: 4rem 7rem 5rem 7rem;
+    padding: 6.5rem;
     margin-top: -15rem;
 }
 
@@ -261,7 +266,7 @@ ul {
 }
 
 .reserve__cta-text p {
-    margin-top: 0.10rem;
+    margin-top: -1rem;
 }
 
 .reserve__cta-btns {
@@ -396,16 +401,43 @@ ul {
 }
 
 /* menu page css */
+
+.menu-hero {
+    background-image: url('../media/menu-cover.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;   
+}
+
+.menu-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 4.5rem 0;
+    margin-bottom: 3rem;
+}
+
+.menu-intro__title {
+    font-size: 3rem;
+    margin: 0 0 0.5rem;
+}
+
+.menu-intro__text {
+    margin: 0;
+    max-width: 40rem;
+}
+
 .menus {
     display: flex;
     min-height: 80vh;
-    padding: 4rem 12rem;
+    padding: 4rem 4rem;
 }
 
 .menu__title {
     font-family: 'Cormorant', serif;
     color: $brand-color1;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -432,7 +464,12 @@ ul {
     font-family: 'Cormorant', serif;
     font-weight: 600;
     color: $brand-color1;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.menu-item__description {
+    margin-top: -1rem;
+    font-weight: 400;
 }
 
 .menu__comments {
@@ -453,6 +490,7 @@ ul {
 
 .menu-panel__inner {
     padding-left: 8rem;
+    margin-top: -4rem;
 }
 
 .menu-panel.is-open {
@@ -466,6 +504,7 @@ ul {
     padding: 2rem 1rem;
     font-family: 'Cormorant', serif;
     font-size: 1.5rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: $brand-color1;
@@ -473,7 +512,7 @@ ul {
 }
 
 .menu-panel__content {
-    min-width: 30rem;
+    min-width: 35rem;
     padding: 5rem 4rem;
     opacity: 0;
     visibility: hidden;
@@ -502,7 +541,7 @@ ul {
     font-family: 'Cormorant', serif;
     font-weight: 800;
     font-size: 3.5rem;
-    line-height: 4rem;
+    line-height: 5rem;
     width: min-content;
     margin: 0;
 }
@@ -535,12 +574,11 @@ ul {
 
 .footer__phone img {
     width: 1.2rem;
-    vertical-align: middle;
     margin-right: 0.4rem;
 }
 
 .footer__phone a {
-    color: inherit;
+    color: $brand-color1;
     font-size: 1.1rem;
 }
 
@@ -567,5 +605,5 @@ ul {
 
 .footer__copyright {
     margin-top: 2rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
