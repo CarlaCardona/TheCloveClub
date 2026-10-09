@@ -391,6 +391,30 @@ ul {
   z-index: 1;
 }
 
+.escargot__img {
+  display: none;
+}
+
+.about__btn {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+  color: #084794;
+  border: 2px solid #084794;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  padding: 1rem 1.2rem;
+}
+
+.about__btns {
+  display: flex;
+  gap: 1rem;
+  align-content: center;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
 /* menu page css */
 .menu_nav {
   background-image: url("../media/menu-cover.png");
@@ -885,5 +909,82 @@ ul {
   .sitemap-title {
     font-size: 0.75rem;
     margin-bottom: 0.5rem;
+  }
+  /* about page nav */
+  .lettermark__about {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .nav__overlay .nav__toggle {
+    color: #FAF4ED;
+  }
+  /* about page hero sctn */
+  .hero__split {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .hero__video {
+    flex-basis: auto;
+    aspect-ratio: 3/4;
+  }
+  .hero__text {
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+  .hero__text h1 {
+    font-size: 2rem;
+  }
+  .hero__text h2 {
+    margin-top: -1rem;
+    padding: 0;
+    font-size: 1.3rem;
+  }
+  /* about page isaac journey sctn */
+  .chunk__divider {
+    padding-top: 1.5rem;
+  }
+  .isaac__header-row {
+    align-items: center;
+  }
+  .isaac__flower {
+    width: 5rem;
+  }
+  .isaac-header {
+    font-size: 2rem;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0 1.5rem 1.5rem auto;
+  }
+  .isaac__img img {
+    width: 100%;
+  }
+  .about__content {
+    padding: 1.5rem 1.5rem 3rem;
+  }
+  .about__content p,
+  .about__content h2 {
+    padding-left: 0;
+  }
+  .about__content h2 {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .pour__img {
+    width: 55%;
+    margin: -10rem -1.5rem 1rem 1rem;
+  }
+  .escargot__img {
+    display: block;
+    float: right;
+    width: 55%;
+    margin: 0 -1.5rem 1rem 1rem;
+  }
+  .about__btn {
+    flex: 1;
+    text-align: center;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    padding: 0.9rem 0.5rem;
   }
 }/*# sourceMappingURL=stylesheet.css.map */
