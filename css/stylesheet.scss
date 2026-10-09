@@ -670,6 +670,8 @@ ul {
         color: $brand-color1;
         position: relative;
         z-index: 3;
+        min-width: 44px;
+        min-height: 44px;
     }
 
     .nav__close-icon {
