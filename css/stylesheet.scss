@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Manrope:wght@200..800&display=swap');
 
+$bp-tablet: 768px;
+$bp-desktop: 1024px;
+
 $brand-color1: #084794;
 $brand-color2: #FAF4ED;
 $line-height: 1.6;
@@ -122,6 +125,13 @@ ul {
     letter-spacing: 0.2em;
     padding: 1rem 1rem;
 }
+
+/* nav - mobile menu css */
+
+.nav__toggle {
+    display: none;
+}
+
 
         /*  homepage - hero css */
 
@@ -402,11 +412,20 @@ ul {
 
 /* menu page css */
 
-.menu-hero {
+.menu_nav {
     background-image: url('../media/menu-cover.png');
     background-size: cover;
     background-position: center;
-    min-height: 80vh;   
+    padding: 2rem 4.5rem 60vh;  
+}
+
+.menu_nav .nav__links a {
+    color: $brand-color2;
+}
+
+.menu-nav-links__reserve {
+    border: 2px solid $brand-color2;
+    padding: 1rem;
 }
 
 .menu-intro {
@@ -525,6 +544,19 @@ ul {
     transition-delay: 0.3s;
 }
 
+.menu__images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu__images img {
+    width: 25%;
+    height: auto;
+    display: block;
+}
+
+
 
 /* footer css*/
 
@@ -606,4 +638,75 @@ ul {
 .footer__copyright {
     margin-top: 2rem;
     font-size: 0.9rem;
+}
+
+
+/* media queries */
+
+@media (max-width: $bp-tablet) {
+
+    nav {
+        padding: 1.5rem;
+    }
+
+    .lettermark {
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .nav__toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        background: none;
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+        color: $brand-color1;
+        position: relative;
+        z-index: 3;
+    }
+
+    .nav__toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: $brand-color1;
+    }
+
+    .nav__toggle[aria-expanded="true"] {
+        color: $brand-color2;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .nav__links.is-open {
+        display: flex;
+        position: fixed;
+        inset: 0;
+        z-index: 2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $brand-color1;
+    }
+
+    .nav__links.is-open ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    .nav__links.is-open a {
+        color: $brand-color2;
+    }
+
+    .nav__links.is-open li:last-child a {
+        border: 2px solid $brand-color2;
+        padding: 1rem 1.5rem;
+    }
 }

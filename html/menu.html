@@ -8,21 +8,26 @@
 </head>
 
 <body>
-    <header class="menu-hero">
-    <nav>
+    <nav class="menu_nav">
         <div class="Logo">
             <h1 class="lettermark">The Clove Club</h1>
         </div>
+
+        <button class="nav__toggle" aria-expanded="false" aria-label="open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <div class="nav__links">
             <ul>
-            <li><a href="../html/homepage.html" class="menu-nav__links">Home</a></li>
-            <li><a href="../html/menu.html" class="menu-nav__links">Menu</a></li>
-            <li><a href="../html/about.html" class="menu-nav__links">About</a></li>
-            <li><a href="https://www.opentable.co.uk/r/the-clove-club?ref=4208" target="_blank" class="menu-nav__reserve-link">Reservations</a></li>
+            <li><a href="../html/homepage.html" class="menu-nav-links">Home</a></li>
+            <li><a href="../html/menu.html" class="menu-nav-links">Menu</a></li>
+            <li><a href="../html/about.html" class="menu-nav-links">About</a></li>
+            <li><a href="https://www.opentable.co.uk/r/the-clove-club?ref=4208" target="_blank" class="menu-nav-links__reserve">Reservations</a></li>
             </ul>
         </div>
     </nav>
-    </header>
 
     <section class="menu-intro">
         <h1 class="menu-intro__title">Our Menus</h1>
@@ -144,6 +149,13 @@
 
 <script src="../javascript/menu.js"></script>
 
+<div class="menu__images">
+    <img src="../media/menu1.png" alt="menu image 1">
+    <img src="../media/menu2.png" alt="menu image 2">
+    <img src="../media/menu3.png" alt="menu image 3">
+    <img src="../media/menu4.png" alt="menu image 4">
+</div>
+
 
 
         <section class="footer">
@@ -188,5 +200,7 @@
                 </div>
             </div>
         </section>
+
+        <script src="../javascript/nav.js"></script>
 </body>
 </html>
