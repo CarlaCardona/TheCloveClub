@@ -113,6 +113,10 @@ ul {
   display: none;
 }
 
+.nav__contact {
+  display: none;
+}
+
 /*  homepage - hero css */
 .hero {
   background-image: url("../media/homepage-hero.png");
@@ -628,6 +632,17 @@ ul {
     position: relative;
     z-index: 3;
   }
+  .nav__close-icon {
+    display: none;
+    width: 28px;
+    height: auto;
+  }
+  .nav__toggle[aria-expanded=true] span {
+    display: none;
+  }
+  .nav__toggle[aria-expanded=true] .nav__close-icon {
+    display: block;
+  }
   .nav__toggle span {
     display: block;
     width: 25px;
@@ -655,9 +670,35 @@ ul {
     align-items: center;
     gap: 1.5rem;
     padding: 0;
+    flex: 1;
+    justify-content: center;
+    margin: 0;
+  }
+  .nav__links.is-open .nav__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 45%;
+    align-self: stretch;
+    background-color: #FAF4ED;
+    color: #084794;
+    text-align: center;
+    font-size: 0.9rem;
   }
   .nav__links.is-open a {
     color: #FAF4ED;
+  }
+  .nav__links.is-open .nav__contact a {
+    color: #084794;
+  }
+  .nav__contact address {
+    font-style: normal;
+  }
+  .nav__phone img {
+    width: 1.2rem;
+    vertical-align: middle;
+    margin-right: 0.4rem;
   }
   .nav__links.is-open li:last-child a {
     border: 2px solid #FAF4ED;
