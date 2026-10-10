@@ -92,6 +92,7 @@ nav {
     font-weight: 800;
     font-size: 4.5rem;
     color: $brand-color1;
+    text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
 
@@ -682,8 +683,9 @@ ul {
 
 /* media queries */
 
-@media (max-width: $bp-desktop) {}
-@media (max-width: $bp-tablet) {
+@media (max-width: $bp-desktop) {
+
+    /* nav media */
 
     nav {
         padding: 1.5rem;
@@ -794,6 +796,63 @@ ul {
     .nav__links.is-open li:last-child a {
         border: 2px solid $brand-color2;
         padding: 1rem 1.5rem;
+    }
+
+    /* about page nav */
+
+    .lettermark__about {
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .nav__overlay .nav__toggle {
+        color: $brand-color2;
+    }
+
+    .hero__text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero__text h2 {
+        font-size: 1.5rem;
+    }
+
+    /* footer */
+
+    .footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .footer-lettermark {
+        width: auto;
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .footer__right {
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+}
+@media (max-width: $bp-tablet) {
+
+    /* landing page */
+
+    .landing__page_btns {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 15rem;
+    }
+
+    .landing__reservations,
+    .landing__homepage {
+        font-size: 0.9rem;
+        padding: 0.75rem 1.5rem;
     }
 
     /* homepage - hero css */
@@ -1007,17 +1066,6 @@ ul {
         margin-bottom: 0.5rem;
     }
 
-    /* about page nav */
-
-    .lettermark__about {
-        font-size: 1.75rem;
-        text-transform: uppercase;
-        margin: 0;
-    }
-
-    .nav__overlay .nav__toggle {
-        color: $brand-color2;
-    }
 
     /* about page hero sctn */
 
