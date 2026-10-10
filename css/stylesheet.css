@@ -362,10 +362,11 @@ ul {
 .isaac__flower {
   width: 6rem;
   display: block;
+  margin-right: -4rem;
 }
 
 .isaac__img img {
-  width: 85%;
+  width: 75%;
   height: auto;
   display: block;
 }
@@ -377,6 +378,7 @@ ul {
 
 .about__content p {
   padding-left: 2rem;
+  padding-right: 15rem;
 }
 
 .about__content h2 {
@@ -747,13 +749,25 @@ ul {
     margin: 0;
   }
   .nav__overlay .nav__toggle {
-    color: #FAF4ED;
+    color: #084794;
+  }
+  .hero__text {
+    padding: 10rem 3rem 4rem;
   }
   .hero__text h1 {
     font-size: 2.5rem;
   }
   .hero__text h2 {
     font-size: 1.5rem;
+  }
+  .about__content {
+    padding: 2rem 3rem 4rem;
+  }
+  .about__content p {
+    padding-right: 0;
+  }
+  .pour__img {
+    margin: -15rem -3rem 1rem 2rem;
   }
   /* footer */
   .footer {
@@ -956,6 +970,10 @@ ul {
     font-size: 0.75rem;
     margin-bottom: 0.5rem;
   }
+  /* about page nav */
+  .nav__overlay .nav__toggle {
+    color: #FAF4ED;
+  }
   /* about page hero sctn */
   .hero__split {
     flex-direction: column;
@@ -1014,7 +1032,7 @@ ul {
   .escargot__img {
     display: block;
     float: right;
-    width: 55%;
+    width: 35%;
     margin: 0 -1.5rem 1rem 1rem;
   }
   .about__btn {
@@ -1023,5 +1041,18 @@ ul {
     font-size: 0.85rem;
     letter-spacing: 0.15em;
     padding: 0.9rem 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  /* about page nav */
+  .nav__overlay .nav__toggle {
+    color: #FAF4ED;
+  }
+  /* about page content */
+  .escargot__img {
+    display: block;
+    float: right;
+    width: 45%;
+    margin: 0 -1.5rem 1rem 1rem;
   }
 }/*# sourceMappingURL=stylesheet.css.map */

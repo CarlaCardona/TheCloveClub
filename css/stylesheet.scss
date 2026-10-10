@@ -394,10 +394,11 @@ ul {
 .isaac__flower {
     width: 6rem;
     display: block;
+    margin-right: -4rem;
 }
 
 .isaac__img img {
-    width: 85%;
+    width: 75%;
     height: auto;
     display: block;
 }
@@ -409,6 +410,7 @@ ul {
 
 .about__content p {
     padding-left: 2rem;
+    padding-right: 15rem;
 }
 
 .about__content h2 {
@@ -807,7 +809,11 @@ ul {
     }
 
     .nav__overlay .nav__toggle {
-        color: $brand-color2;
+        color: $brand-color1;
+    }
+
+    .hero__text {
+        padding: 10rem 3rem 4rem;
     }
 
     .hero__text h1 {
@@ -816,6 +822,18 @@ ul {
 
     .hero__text h2 {
         font-size: 1.5rem;
+    }
+
+    .about__content {
+        padding: 2rem 3rem 4rem;
+    }
+
+    .about__content p {
+        padding-right: 0;
+    }
+
+    .pour__img {
+        margin: -15rem -3rem 1rem 2rem;
     }
 
     /* footer */
@@ -1066,6 +1084,12 @@ ul {
         margin-bottom: 0.5rem;
     }
 
+    /* about page nav */
+
+    .nav__overlay .nav__toggle {
+    color: $brand-color2;
+    }
+
 
     /* about page hero sctn */
 
@@ -1141,7 +1165,7 @@ ul {
     .escargot__img {
         display: block;
         float: right;
-        width: 55%;
+        width: 35%;
         margin: 0 -1.5rem 1rem 1rem;
     }
 
@@ -1154,4 +1178,20 @@ ul {
     }
 
 }
-@media (max-width: $bp-mobile) {}
+@media (max-width: $bp-mobile) {
+
+    /* about page nav */
+
+    .nav__overlay .nav__toggle {
+    color: $brand-color2;
+    }
+
+    /* about page content */
+
+    .escargot__img {
+    display: block;
+    float: right;
+    width: 45%;
+    margin: 0 -1.5rem 1rem 1rem;
+    }
+}
