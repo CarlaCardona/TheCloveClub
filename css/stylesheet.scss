@@ -8,22 +8,26 @@ $brand-color1: #084794;
 $brand-color2: #FAF4ED;
 $line-height: 1.6;
 
+$font-serif: 'Cormorant', serif;
+$font-sans: 'Manrope', sans-serif;
+
+
 
 body {
     background-color: $brand-color2;
     margin: 0;
-    font-family: 'Manrope', sans-serif;
+    font-family: $font-sans;
     letter-spacing: 0.08rem;
     line-height: $line-height;
 }
 
 h1 {
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     color: $brand-color1;
 }
 
 h2 {
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     font-style: italic;
     font-weight: 200;
 }
@@ -67,7 +71,7 @@ h2 {
 }
 
 .landing__reservations, .landing__homepage {
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     color: $brand-color2;
     border: 2px solid $brand-color2;
     background-color: transparent;
@@ -88,7 +92,7 @@ nav {
 }
 
 .lettermark {
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     font-weight: 800;
     font-size: 3.5rem;
     color: $brand-color1;
@@ -105,7 +109,7 @@ ul {
 
 .nav__links li{
     list-style: none;
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     font-weight: 600;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -119,7 +123,7 @@ ul {
 }
 
 .nav__reservations {
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     color: $brand-color1;
     border: 2px solid $brand-color1;
     background-color: transparent;
@@ -307,7 +311,7 @@ ul {
 }
 
 .homepage__menu-btn, .homepage__reservations-btn {
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     color: $brand-color2;
     border: 2px solid $brand-color2;
     background-color: transparent;
@@ -327,7 +331,7 @@ ul {
 }
 
 .lettermark__about {
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     font-weight: 800;
     font-size: 4.5rem;
     color: $brand-color2;
@@ -431,7 +435,7 @@ ul {
 }
 
 .about__btn {
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     font-weight: 700;
     color: $brand-color1;
     border: 2px solid $brand-color1;
@@ -462,7 +466,7 @@ ul {
 }
 
 .lettermark__menu {
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     font-weight: 800;
     font-size: 3.5rem;
     color: $brand-color2;
@@ -524,7 +528,7 @@ ul {
 }
 
 .menu-item__name {
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     font-weight: 600;
     color: $brand-color1;
     font-size: 1.5rem;
@@ -614,7 +618,7 @@ ul {
 }
 
 .footer-lettermark {
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     font-weight: 800;
     font-size: 3.5rem;
     line-height: 5rem;
@@ -632,7 +636,7 @@ ul {
 .visit-title, 
 .follow-title,
 .sitemap-title {
-    font-family: 'Cormorant', serif;
+    font-family: $font-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1rem;
