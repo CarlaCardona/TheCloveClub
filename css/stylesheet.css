@@ -94,6 +94,17 @@ ul {
   text-decoration: none;
 }
 
+.nav__links li:not(:last-child) a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+}
+
+.nav__links li:last-child a:hover,
+.nav__links li:last-child a:focus-visible {
+  background-color: #084794;
+  color: #FAF4ED;
+}
+
 .nav__links a {
   color: #084794;
   text-decoration: none;
@@ -439,6 +450,12 @@ ul {
 
 .menu_nav .nav__links a {
   color: #FAF4ED;
+}
+
+.menu_nav .nav__links li:last-child a:hover,
+.menu_nav .nav__links li:last-child a:focus-visible {
+  background-color: #FAF4ED;
+  color: #084794;
 }
 
 .menu-nav-links__reserve {

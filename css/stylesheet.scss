@@ -117,6 +117,17 @@ ul {
     
 }
 
+.nav__links li:not(:last-child) a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+}
+
+.nav__links li:last-child a:hover,
+.nav__links li:last-child a:focus-visible {
+    background-color: $brand-color1;
+    color: $brand-color2;
+}
+
 .nav__links a{
     color: $brand-color1;
     text-decoration: none;
@@ -478,6 +489,12 @@ ul {
 
 .menu_nav .nav__links a {
     color: $brand-color2;
+}
+
+.menu_nav .nav__links li:last-child a:hover,
+.menu_nav .nav__links li:last-child a:focus-visible {
+    background-color: $brand-color2;
+    color: $brand-color1;
 }
 
 .menu-nav-links__reserve {
