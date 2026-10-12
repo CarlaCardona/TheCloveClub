@@ -61,6 +61,14 @@ h2 {
   padding: 1rem 1.2rem;
 }
 
+.landing__reservations:hover,
+.landing__reservations:focus-visible,
+.landing__homepage:hover,
+.landing__homepage:focus-visible {
+  background-color: #FAF4ED;
+  color: #084794;
+}
+
 /* nav css */
 nav {
   background-color: transparent;
@@ -291,11 +299,20 @@ ul {
 .homepage__menu-btn, .homepage__reservations-btn {
   font-family: "Cormorant", serif;
   color: #FAF4ED;
+  font-weight: 800;
   border: 2px solid #FAF4ED;
   background-color: transparent;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding: 1rem 1.2rem;
+}
+
+.homepage__menu-btn:hover,
+.homepage__menu-btn:focus-visible,
+.homepage__reservations-btn:hover,
+.homepage__reservations-btn:focus-visible {
+  background-color: #FAF4ED;
+  color: #084794;
 }
 
 /* about page css */
@@ -413,7 +430,7 @@ ul {
 
 .about__btn {
   font-family: "Cormorant", serif;
-  font-weight: 700;
+  font-weight: 800;
   color: #084794;
   border: 2px solid #084794;
   background-color: transparent;
@@ -421,6 +438,12 @@ ul {
   text-decoration: none;
   letter-spacing: 0.2em;
   padding: 1rem 1.2rem;
+}
+
+.about__btn:hover,
+.about__btn:focus-visible {
+  background-color: #084794;
+  color: #FAF4ED;
 }
 
 .about__btns {

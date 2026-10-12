@@ -80,6 +80,14 @@ h2 {
     padding: 1rem 1.2rem;
 }
 
+.landing__reservations:hover,
+.landing__reservations:focus-visible,
+.landing__homepage:hover,
+.landing__homepage:focus-visible {
+    background-color: $brand-color2;
+    color: $brand-color1;
+}
+
 /* nav css */
 
 nav {
@@ -325,11 +333,20 @@ ul {
 .homepage__menu-btn, .homepage__reservations-btn {
     font-family: $font-serif;
     color: $brand-color2;
+    font-weight: 800;
     border: 2px solid $brand-color2;
     background-color: transparent;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     padding: 1rem 1.2rem;
+}
+
+.homepage__menu-btn:hover,
+.homepage__menu-btn:focus-visible,
+.homepage__reservations-btn:hover,
+.homepage__reservations-btn:focus-visible {
+    background-color: $brand-color2;
+    color:$brand-color1;
 }
 
 /* about page css */
@@ -449,7 +466,7 @@ ul {
 
 .about__btn {
     font-family: $font-serif;
-    font-weight: 700;
+    font-weight: 800;
     color: $brand-color1;
     border: 2px solid $brand-color1;
     background-color: transparent;
@@ -459,6 +476,12 @@ ul {
     padding: 1rem 1.2rem;
 }
 
+.about__btn:hover,
+.about__btn:focus-visible {
+    background-color: $brand-color1;
+    color: $brand-color2;
+}
+
 .about__btns {
     display: flex;
     gap: 1rem;
@@ -466,6 +489,8 @@ ul {
     margin-top: 2rem;
     padding: 2rem;
 }
+
+
 
 
 
