@@ -210,7 +210,7 @@ ul {
     display: flex;
     align-items: flex-start;
    
-    gap: 4rem;
+    gap: 0.5rem;
     padding-right: 8rem;
 }
 
@@ -220,14 +220,15 @@ ul {
 
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 25%;
+    flex-basis: 35%;
+    margin-top: 8rem;
 }
 
 .plate-trio img {
     width: 100%;
     height: auto;
     display: block;
-    margin-left: -0.2rem;
+    margin-left: -8rem;
 }
 
 .plate-trio img + img {
@@ -247,8 +248,8 @@ ul {
 }
 
 .review1 {
-    margin-top: 10rem;
-    max-width: 60%;
+    margin-top: 20rem;
+    max-width: 80%;
 }
 
 .review1 h2 {
@@ -256,10 +257,10 @@ ul {
 }
 
 .review2 {
-    max-width: 65%;
+    max-width: 55%;
     align-self: flex-end;
     text-align: right;
-    margin-bottom: 10rem;
+    margin-bottom: 17rem;
 }
 
 .reviews img{
